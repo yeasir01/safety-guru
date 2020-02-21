@@ -11,10 +11,9 @@
     min-height: 420px;
 }
 
-.card-image {
-    display: flex;
-    align-items: center;
-    height: 180px;
+.card-image img {
+    max-height: 180px;
+    width: auto;
     padding: 40px;
 }
 
