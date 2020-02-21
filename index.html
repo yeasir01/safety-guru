@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <title>Safety Guru</title>
 </head>
@@ -24,45 +24,11 @@
         </div>
     </main>
 
-    <section class="cards container">
-        <div class="card rounding box-hover">
-            <div class="card-img">
-                <img src="./assets/images/nhtsa_img.png" alt="National Highway and Traffic Safety Administration Logo">
-            </div>
-            <div class="card-content">
-                <p>The National Highway Traffic Safety Administration (NHTSA) is a federal agency of the United States
-                    government tasked with upholding regulatory safety standards in automobile manufacturing and the
-                    highway transportation system. It is a part of the U.S. Department of Transportation.</p>
-                <a href="">Learn more...</a>
-            </div>
-        </div>
-        <div class="card rounding box-hover">
-            <div class="card-img">
-                <img src="./assets/images/NCAP.png" alt="Car Query Api Logo">
-            </div>
-            <div class="card-content">
-                <p>A New Car Assessment Program is a government car safety program tasked with evaluating new automobile
-                    designs for performance against various safety threats.</p>
-                <a href="">Learn more...</a>
-            </div>
-        </div>
-        <div class="card rounding box-hover">
-            <div class="card-img">
-                <img src="./assets/images/carQuery_img.png" alt="Car Query Api Logo">
-            </div>
-            <div class="card-content">
-                <p>CarQuery API is an easy to use JSON based API for retrieving detailed car and truck information,
-                    including year, make, model, trim, and specifications</p>
-                <a href="">Learn more...</a>
-            </div>
-        </div>
-    </section>
-
     <section class="search container">
         <div id="search-sec" class="search-box rounding box-hover">
             <h1 class="title">Vehicle Search</h1>
             <p class="subtitle">
-                Search by Year, Make & Model
+                Search by Year, Make, Model & Trim
             </p>
             <div class="select-boxes">
                 <select name="car-years" id="car-years"></select>
@@ -94,6 +60,40 @@
         <div id="safety-div" class="tab-content hide"></div>
         <div id="recall-div" class="tab-content hide"></div>
         <div id="tsb-div" class="tab-content hide"></div>
+    </section>
+
+    <section class="cards container">
+        <div class="card rounding box-hover">
+            <div class="card-img">
+                <img src="./assets/images/nhtsa_img.png" alt="National Highway and Traffic Safety Administration Logo">
+            </div>
+            <div class="card-content">
+                <p>The National Highway Traffic Safety Administration (NHTSA) is a federal agency of the United States
+                    government tasked with upholding regulatory safety standards in automobile manufacturing and the
+                    highway transportation system. It is a part of the U.S. Department of Transportation.</p>
+                <a href="">Learn more</a>
+            </div>
+        </div>
+        <div class="card rounding box-hover">
+            <div class="card-img">
+                <img src="./assets/images/NCAP.png" alt="Car Query Api Logo">
+            </div>
+            <div class="card-content">
+                <p>A New Car Assessment Program is a government car safety program tasked with evaluating new automobile
+                    designs for performance against various safety threats.</p>
+                <a href="">Learn more</a>
+            </div>
+        </div>
+        <div class="card rounding box-hover">
+            <div class="card-img">
+                <img src="./assets/images/carQuery_img.png" alt="Car Query Api Logo">
+            </div>
+            <div class="card-content">
+                <p>CarQuery API is an easy to use JSON based API for retrieving detailed car and truck information,
+                    including year, make, model, trim, and specifications</p>
+                <a href="">Learn more</a>
+            </div>
+        </div>
     </section>
 
     <footer class="footer">
