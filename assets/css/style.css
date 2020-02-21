@@ -1,0 +1,135 @@
+body {
+    background-color: black;
+}
+main { 
+    background: url(https://images.unsplash.com/photo-1471958680802-1345a694ba6d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=60) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: fixed;
+    min-height: 100vh;
+    animation:fade-in 3s linear;
+    
+  }
+/* HEADER BACKGROUND HERE */
+.hero {
+    background-image: url(https://images.unsplash.com/photo-1553875039-011cd517d6a4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=60);
+    background-attachment: fixed;
+    background-size: cover;
+    animation:road_anim 30s linear infinite;
+}
+
+/* Safety Guru */
+#head {
+    background: hide;
+    text-align: center;
+    text-size-adjust: 200%;
+    color:#b0c4de;
+    animation:fade-in 2s linear;
+}
+
+
+/* Motto */
+#head2 {
+    text-align: center;
+    color:#b0c4de;
+    animation:fade-in 4s linear;
+    
+}
+
+#year {
+    width: 31%;
+    float: left;
+    padding-right: 3%;
+    
+}
+
+#make {
+    width: 32%;
+    float: left;
+}
+#model {
+    width: 31%;
+    float: left;
+}
+#ymm {
+    margin-left: 40%;
+}
+
+.section {
+    width: 80%;
+    margin: 30px auto;
+}
+
+.tabed-section {
+    background-color: rgba(51, 50, 50, 0.7);
+    font-size: 1.25rem;
+    padding: 20px;
+}
+
+.tabed-section h5 {
+    font-weight: 700;
+}
+
+.tabed-section p {
+    font-size: 1rem;
+}
+
+#safety-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+#left-safety, #right-safety {
+    width: 100%;
+    padding: 0 20px;
+}
+
+.rating-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.safety-title {
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
+.safety-desc {
+    font-size: 1.25rem;
+    color: #3273dc;
+}
+
+.tab-content {
+    animation: fade-down 4s linear;
+}
+
+/* GLOBAL CSS */
+.hide {
+    display: none !important;
+}
+
+@keyframes road_anim{
+	0%{background-position:0 0;}
+		100%{background-position:-2122px 0;}
+}
+
+@keyframes fade-in{
+	from {	opacity: 0;}
+    to {opacity: 1;}
+}
+
+@media only screen and (max-width: 1065px) {
+    .section {
+        width: 95%;
+        margin: 15px auto;
+    }
+
+    #safety-div {
+        display: block;
+    }
+  }
+
+
+  
