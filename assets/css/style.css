@@ -14,7 +14,7 @@ body {
     background-color: #eff3f4;
 }
 
-h1, h2, h3, h4, h5, p, select, button, ul, li, a {
+h1, h2, h3, h4, h5, p, select, button, ul, li, a, tr, td {
     font-family: 'Montserrat', 'sans-serif';
     font-weight: 400;
 }
@@ -121,7 +121,7 @@ h1, h2, h3, h4, h5, p, select, button, ul, li, a {
     font-size: 2rem;
     position: absolute;
     bottom: 5%;
-    left: 50%;
+    left: 49%;
     color: #2d7597;
     transition: linear .3s;
 }
@@ -168,6 +168,31 @@ h1, h2, h3, h4, h5, p, select, button, ul, li, a {
     margin-right: 1.5rem;
     cursor: pointer;
     font-size: 1.125rem;
+}
+
+#details-div {
+    display: flex;
+    flex-direction: row;
+}
+
+#veh-img {
+    width: 50%;
+}
+
+#veh-img img {
+    width: 100%;
+    padding: 30px;
+}
+
+#car-model-data {
+    width: 50%;
+}
+
+.model-data {
+    width: 100%;
+    padding: 30px;
+    text-align: left;
+    padding-bottom: 10px;
 }
 
 .footer {
@@ -217,6 +242,19 @@ h1, h2, h3, h4, h5, p, select, button, ul, li, a {
     .card {
         width: 100%;
         margin-bottom: 30px;
+    }
+
+    #details-div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #veh-img {
+        width: 100%;
+    }
+
+    #car-model-data {
+        width: 100%;
     }
 
   }
