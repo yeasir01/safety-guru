@@ -1,135 +1,153 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    background-color: black;
-}
-main { 
-    background: url(https://images.unsplash.com/photo-1471958680802-1345a694ba6d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=60) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-position: fixed;
-    min-height: 100vh;
-    animation:fade-in 3s linear;
-    
-  }
-/* HEADER BACKGROUND HERE */
-.hero {
-    background-image: url(https://images.unsplash.com/photo-1553875039-011cd517d6a4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=60);
-    background-attachment: fixed;
-    background-size: cover;
-    animation:road_anim 30s linear infinite;
+    background-color: #eff3f4;
 }
 
-/* Safety Guru */
-#head {
-    background: hide;
-    text-align: center;
-    text-size-adjust: 200%;
-    color:#b0c4de;
-    animation:fade-in 2s linear;
+h1, h2, h3, h4, h5, p, select, button, ul, li, a {
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 400;
 }
 
-
-/* Motto */
-#head2 {
-    text-align: center;
-    color:#b0c4de;
-    animation:fade-in 4s linear;
-    
-}
-
-#year {
-    width: 31%;
-    float: left;
-    padding-right: 3%;
-    
-}
-
-#make {
-    width: 32%;
-    float: left;
-}
-#model {
-    width: 31%;
-    float: left;
-}
-#ymm {
-    margin-left: 40%;
-}
-
-.section {
-    width: 80%;
+.container {
+    width: 90%;
     margin: 30px auto;
 }
 
-.tabed-section {
-    background-color: rgba(51, 50, 50, 0.7);
-    font-size: 1.25rem;
+.hero-container {
+    width: 90%;
+    margin: auto;
+}
+
+.rounding {
+    border-radius: 4px;
+}
+
+.txt-logo {
+    padding: 15px 0;
+    font-size: 2rem;
+}
+
+.hero {
+    background-color: #33a7dc;
+    min-height: 100vh;
+    position: relative;
+    color: #fff;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.hero-img {
+    max-width: 760px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 30px;
+    max-width: 32%;
+}
+
+.card-img {
     padding: 20px;
 }
 
-.tabed-section h5 {
-    font-weight: 700;
+.card-img img {
+    max-width: 264px;
 }
 
-.tabed-section p {
-    font-size: 1rem;
+.down-arrow a{
+    font-size: 2rem;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    color: #2d7597;
+    transition: linear .3s;
 }
 
-#safety-div {
+.down-arrow a:hover{
+    color: #80d3fa;
+    transform: scale(1.5);
+}
+
+
+.search-box {
+    background-color: #fff;
+    padding: 40px 10px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-#left-safety, #right-safety {
-    width: 100%;
-    padding: 0 20px;
+.tab-section {
+    background-color: #fff;
+    padding: 30px;
+    min-height: 200px;
 }
 
-.rating-row {
+.tabs {
+    border-bottom: 1px solid rgb(218, 218, 218);
+}
+.tabs ul {
+    padding-bottom: 10px;
+}
+
+.tabs ul li {
+    display: inline;
+    margin-right: 1.5rem;
+    cursor: pointer;
+    font-size: 1.125rem;
+}
+
+.footer {
+    background-color: #3b3b3b;
+    height: 80px;
+    color: #fff;
     display: flex;
-    justify-content: space-between;
+    text-align: center;
+    justify-content: center;
 }
 
-.safety-title {
-    font-weight: 500;
-    font-size: 1.25rem;
+.footer a {
+    color: #33a7dc;
 }
 
-.safety-desc {
-    font-size: 1.25rem;
-    color: #3273dc;
-}
-
-.tab-content {
-    animation: fade-down 4s linear;
-}
-
-/* GLOBAL CSS */
 .hide {
     display: none !important;
 }
 
-@keyframes road_anim{
-	0%{background-position:0 0;}
-		100%{background-position:-2122px 0;}
+.box-hover:hover {
+    box-shadow: 0 0.5em 1em -0.125em rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.04);
 }
 
-@keyframes fade-in{
-	from {	opacity: 0;}
-    to {opacity: 1;}
+.is-active {
+    color: #0f7ec2;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #0f7ec2;
 }
-
-@media only screen and (max-width: 1065px) {
-    .section {
-        width: 95%;
-        margin: 15px auto;
-    }
-
-    #safety-div {
-        display: block;
-    }
-  }
-
-
-  
