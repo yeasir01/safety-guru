@@ -144,7 +144,7 @@ tbody,
 .down-arrow a {
     font-size: 2rem;
     position: absolute;
-    bottom: 5%;
+    bottom: 10%;
     left: 49%;
     color: #2d7597;
     transition: linear .3s;
