@@ -281,6 +281,10 @@ tbody,
         margin-bottom: 20px;
     }
 
+    .hero-content {
+        width: 65%;
+    }
+
     .select-boxes button {
         display: block;
         width: 100%;
@@ -317,8 +321,24 @@ tbody,
         font-size: .9rem;
     }
 
+    .txt-logo {
+        font-size: 1.8rem;
+    }
+
     .container {
         width: 100%;
+    }
+
+    .hero-container {
+        text-align: center;
+    }
+
+    .hero-content {
+        width: 85%;
+    }
+
+    .hero-content h2 {
+    font-size: 1.1rem;
     }
 
     .model-data {
@@ -327,7 +347,8 @@ tbody,
     }
 
     .tabs ul li {
-        font-size: .9rem;
+        width: 33%;
+        font-size: .8rem;
     }
 
     .recall-title {
