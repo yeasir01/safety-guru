@@ -14,9 +14,28 @@ body {
     background-color: #eff3f4;
 }
 
-h1, h2, h3, h4, h5, p, select, button, ul, li, a, tr, td {
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+select,
+button,
+ul,
+li,
+a,
+tr,
+td {
     font-family: 'Montserrat', 'sans-serif';
     font-weight: 400;
+}
+
+tbody,
+.rating-row,
+.recall-summary,
+.recall-number {
+    color: #424242;
 }
 
 .container {
@@ -102,6 +121,11 @@ h1, h2, h3, h4, h5, p, select, button, ul, li, a, tr, td {
     justify-content: center;
     background-color: #fff;
     padding: 30px;
+    margin-right: 20px;
+}
+
+.card:last-child {
+    margin-right: 0;
 }
 
 .card-img {
@@ -117,7 +141,7 @@ h1, h2, h3, h4, h5, p, select, button, ul, li, a, tr, td {
     color: #0f7ec2;
 }
 
-.down-arrow a{
+.down-arrow a {
     font-size: 2rem;
     position: absolute;
     bottom: 5%;
@@ -126,7 +150,7 @@ h1, h2, h3, h4, h5, p, select, button, ul, li, a, tr, td {
     transition: linear .3s;
 }
 
-.down-arrow a:hover{
+.down-arrow a:hover {
     color: #80d3fa;
     transform: scale(1.3);
 }
@@ -159,6 +183,7 @@ h1, h2, h3, h4, h5, p, select, button, ul, li, a, tr, td {
 .tabs {
     border-bottom: 1px solid rgb(218, 218, 218);
 }
+
 .tabs ul {
     padding-bottom: 10px;
 }
@@ -181,7 +206,7 @@ h1, h2, h3, h4, h5, p, select, button, ul, li, a, tr, td {
 
 #veh-img img {
     width: 100%;
-    padding: 30px;
+    padding: 10px 0;
 }
 
 #car-model-data {
@@ -193,6 +218,32 @@ h1, h2, h3, h4, h5, p, select, button, ul, li, a, tr, td {
     padding: 30px;
     text-align: left;
     padding-bottom: 10px;
+}
+
+#recall-div {
+    padding: 30px 0;
+}
+
+.recall-title {
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    color: #0f7ec2;
+    padding-bottom: 3px;
+}
+
+.recall-summary {
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding-bottom: 3px;
+}
+
+.recall-number {
+    font-size: .85rem;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .footer {
@@ -212,8 +263,8 @@ h1, h2, h3, h4, h5, p, select, button, ul, li, a, tr, td {
     display: none !important;
 }
 
-.box-hover:hover {
-    box-shadow: 0 0.5em 1em -0.125em rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.04);
+.box-shadow {
+    box-shadow: 0 0.5em 1em -0.125em rgba(124, 124, 124, 0.1), 0 0 0 1px rgba(124, 124, 124, 0.01);
 }
 
 .is-active {
@@ -224,16 +275,16 @@ h1, h2, h3, h4, h5, p, select, button, ul, li, a, tr, td {
 
 @media only screen and (max-width: 1000px) {
     .select-boxes select {
-      display: block;
-      width: 100%;
-      margin-bottom: 20px;
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
     }
 
     .select-boxes button {
         display: block;
         width: 100%;
         margin-bottom: 20px;
-      }
+    }
 
     .cards {
         flex-direction: column;
@@ -242,6 +293,7 @@ h1, h2, h3, h4, h5, p, select, button, ul, li, a, tr, td {
     .card {
         width: 100%;
         margin-bottom: 30px;
+        margin-right: 0;
     }
 
     #details-div {
@@ -257,10 +309,31 @@ h1, h2, h3, h4, h5, p, select, button, ul, li, a, tr, td {
         width: 100%;
     }
 
-  }
+}
 
-  @media only screen and (max-width: 500px) {
-      .container {
-          width: 100%;
-      }
-  }
+@media only screen and (max-width: 500px) {
+    .container {
+        width: 100%;
+    }
+
+    .model-data {
+        padding: 0;
+        font-size: .80rem;
+    }
+
+    .tabs ul li {
+        font-size: .8rem;
+    }
+
+    .recall-title {
+        font-size: .9rem;
+    }
+
+    .recall-summary {
+        font-size: .75rem;
+    }
+
+    .recall-number {
+        font-size: .65rem;
+    }
+}
