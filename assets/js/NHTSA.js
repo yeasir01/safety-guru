@@ -13,12 +13,16 @@ $(".tab").on("click", function () {
 });
 
 $("#search-btn").on("click", function (event) {
-    event.preventDefault();
-    getVehinfo();
-    getRecall();
-    getPhoto();
+    var model = $('#car-models').val();
+    if ( model === "") {
+        
+    } else {
+        event.preventDefault();
+        getVehinfo();
+        getRecall();
+        getPhoto();
+    }
 });
-
 
 //PARSE DATA & RETURN VEHICLE ID
 function getVehinfo() {
@@ -60,7 +64,7 @@ function getSafety(value) {
     $.ajax({
         url: safetyQuery,
         type: 'GET',
-        
+
 
         success: function (response) {
 
